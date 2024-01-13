@@ -49,6 +49,7 @@ nav a {
   text-decoration: none;
   color: #424242;
 }
+
 /* Banner Styles */
 .banner-content {
   width: 800px;
@@ -71,9 +72,26 @@ nav a {
 }
 
 /* Responsive Media Queries */
-@media screen and (max-width:576px) {
+
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+    .banner-content{
+        width: auto; 
+    }
     header{
           padding: 20px;
     }
-    
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* Tablet or Medium Devices */
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    header{
+        padding: 50px;
+  }
+    nav{
+      flex-direction: column;
+  }
 }
